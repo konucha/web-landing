@@ -1,0 +1,180 @@
+/* Navbar */
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-family: Fredoka One;
+  font-size: 35px;
+}
+
+/* Jumbotron*/
+.jumbotron {
+  background-image: url(img/covid.jpg);
+  background-size: cover;
+  height: 540px;
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron .display-4 {
+  color: rgb(255, 255, 255);
+  margin-top: 180px;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(173, 131, 131, 0.911);
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+
+.jumbotron .display-4 span {
+  font-weight: 500;
+}
+
+/*info panel*/
+.info-panel {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 5);
+  border-radius: 20px;
+  margin-top: -80px;
+  background-color: rgb(247, 231, 232);
+  padding: 30px;
+}
+
+.info-panel img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.info-panel h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.info-panel p {
+  font-size: 14px;
+  color: #3f3c3c;
+  margin-top: -5px;
+  font-weight: 200;
+}
+
+/*akhir info panel*/
+
+/*workingspace*/
+.workingspace {
+  margin-top: 120px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.workingspace h3 {
+  font-size: 52px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.workingspace img {
+  border-radius: 20px;
+  margin-right: 30px;
+}
+
+.workingspace a {
+  margin-bottom: 50px;
+}
+
+.workingspace h3 span {
+  font-weight: 500;
+
+}
+
+.workingspace p {
+  font-size: 18px;
+  color: #3f3c3c;
+  font-weight: 200;
+  margin: 25px 0px;
+}
+
+.akhirkata {
+  margin-top: 50px;
+}
+
+.akhirkata h5 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.footer {
+  margin-top: 70px;
+  margin-bottom: 0px;
+  background-color: #f1d2d2;
+}
+
+.footer p {
+  color: #3f3c3c;
+  font-size: 18px;
+}
+
+/* utility*/
+.tombol {
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+
+/* Desktop version */
+.navbar-brand,
+.nav-link {
+  color: black;
+  text-shadow: 1px 1px 1px rgba(173, 131, 131, 0.911);
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+
+  .nav-link:hover {
+    border-bottom: 3px solid #0b63dc;
+    margin-bottom: -3px;
+  }
+
+  .jumbotron {
+    margin-top: -75px;
+    height: 660px;
+  }
+
+  .jumbotron,
+  .display-4 {
+    font-size: 70px;
+  }
+
+  .workingspace {
+    text-align: left;
+  }
+
+  .akhirkata {
+    font-size: 30px;
+  }
+}
